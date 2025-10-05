@@ -61,6 +61,26 @@ public class Revenue implements Serializable {
         this.notes = notes;
     }
 
+    @Override
+    public String toString() {
+        return revenueId + "," + date + "," + machineAmount + "," + salesAmount + "," + notes;
+    }
+
+    public static Revenue fromString(String line) {
+        String[] parts = line.split(",");
+        if (parts.length != 5) return null;
+        try {
+            return new Revenue(
+                    parts[0],
+                    java.time.LocalDate.parse(parts[1]),
+                    Double.parseDouble(parts[2]),
+                    Double.parseDouble(parts[3]),
+                    parts[4]
+            );
+        } catch (Exception e) {
+            return null;
+        }
+    }
 }
 
 
