@@ -1,0 +1,2 @@
+Product [productId='001', productName='sach', Category='do dung hoc tap', Brand='giang', ImportPrice=15000.0, SalePrice=17000.0, StockQuantity=20, Description='sach toan', Status='Còn hàng']
+Product [productId='001', productName='sach', Category='do dung hoc tap', Brand='giang', ImportPrice=10000.0, SalePrice=12000.0, StockQuantity=20, Description='sach toan', Status='Còn hàng']
